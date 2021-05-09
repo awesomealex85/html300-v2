@@ -8,8 +8,13 @@ html {
     box-sizing: inherit;
 }
 
-.main {
+main, p{
     padding: 2rem;
+    margin: auto;
+    text-align: center;
+    & img, p{
+      width: 40em;
+    }
 }
 
 h1, h2, h3, p {
