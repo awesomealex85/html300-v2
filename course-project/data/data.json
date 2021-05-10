@@ -1,0 +1,12 @@
+
+'[{
+  "name": "Pupusas",
+  "Course": "Front End Developer",
+  "Diet": "Web Weavers",
+  "Prep Time": "3 years",
+  "Cook Time": "University of Washington",
+  "Serving Size": "Marketing",
+  "email": "paolo@example.com",
+  "linkedInUrl": "paolo.linkedinprofile.com",
+  "codeLanguages": ["HTML", "CSS", "JavaScript", "Node", "Express"]
+}]'

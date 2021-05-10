@@ -40,9 +40,6 @@ footer {
   & a {
     color: white;
   }
-  & ul {
-    padding-left: 0px;
-  }
 }
 
 // navigation bar
@@ -58,6 +55,9 @@ nav {
   }
   & li {
     display: inline;
+  }
+  & ul {
+    padding-left: 0px;
   }
 }
 // main card declared
