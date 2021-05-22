@@ -20,7 +20,7 @@ header {
     width: 20em;
   }
   & h2{
-    color: #083d5d;
+    color: $salvablue;
   }
 }
 // logo
@@ -30,7 +30,7 @@ header {
 
 
 footer {
-  background: #083d5d;
+  background: $salvablue;
   box-sizing: border-box;
   text-align: center;
   font-weight: bold;
@@ -61,52 +61,84 @@ nav {
   }
 }
 // main card declared
-// .card {
-//   display: flex;
-//   border: 2rem solid $darkgray;
-//   padding: 1rem;
-//   width: 50%;
-//   margin: 2em;
-//   // flows card down for mobile
-//   @media screen and (max-width: 768px) {
-//     border-width: 1rem;
-//     flex-direction: column;
-//     width: 100%;
-//     margin-left: 0em;
-//     align-items: center;
-//   }
-//   // croppes profile picture to circle
-//   &__img {
-//     -webkit-border-radius: 50%;
-//     -moz-border-radius: 50%;
-//     -ms-border-radius: 50%;
-//     -o-border-radius: 50%;
-//     object-fit:cover;
-//     width: 12em;
-//     border-radius: 50%;
-//   }
-//   // centers text profile picture
-//   &__center {
-//     margin: auto;
-//     text-align: center;
-//     padding-right: 2em;
-//   }
-//     // centers text with logo
-//   &__description {
-//     background-color: $gray;
-//     width: 50rem;
-//     padding-left: 2em;
-//     & P:last-child {
-//       display: flex;
-//       align-items:center;
-//     }
-//     & img {
-//       padding: 1em 1em 1em 0em;
-//     }
-//     // flows card down for mobile
-//     @media screen and (max-width: 768px) {
-//       width: 90%;
-//       padding-left: 1em;
-//     }
-//   }
-// }
+.recipe {
+  display: flex;
+  border: 2rem solid $darkgray;
+  padding: 1rem;
+  width: 50%;
+  margin: 2em;
+  // flows card down for mobile
+  @media screen and (max-width: 768px) {
+    border-width: 1rem;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0em;
+    align-items: center;
+  }
+  // croppes profile picture to circle
+  &__img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit:cover;
+    width: 12em;
+    border-radius: 50%;
+  }
+  // centers text profile picture
+  &__center {
+    margin: auto;
+    text-align: center;
+    padding-right: 2em;
+  }
+    // centers text with logo
+  &__description {
+    background-color: $gray;
+    margin: auto;
+    // width: 80%;
+    // // padding-left: 2em;
+    // margin: auto;
+    text-align: center;
+
+    // & img {
+    //   padding: 1em 1em 1em 0em;
+    // }
+    // flows card down for mobile
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      padding-left: 1em;
+      text-align: center;
+    }
+  }
+}
+
+// bounce animation
+.animated:hover {
+
+            -webkit-animation-duration: 6s infinite;
+            animation-duration: 6s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+         }
+
+         @-webkit-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+            20% {-webkit-transform: translateY(-30px);}
+            40% {-webkit-transform: translateY(30px);}
+            60% {-webkit-transform: translateX(-30px);}
+            80% {-webkit-transform: translateX(30px);}
+         }
+
+         @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            20% {transform: translateY(-30px);}
+            40% {transform: translateY(30px);}
+            60% {transform: translateX(-30px);}
+            80% {transform: translateX(30px);}
+         }
+
+         .bounce {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+         }

@@ -1,12 +1,11 @@
-
-'[{
+[{
   "name": "Pupusas",
-  "Course": "Front End Developer",
-  "Diet": "Web Weavers",
-  "Prep Time": "3 years",
-  "Cook Time": "University of Washington",
-  "Serving Size": "Marketing",
-  "email": "paolo@example.com",
-  "linkedInUrl": "paolo.linkedinprofile.com",
-  "codeLanguages": ["HTML", "CSS", "JavaScript", "Node", "Express"]
-}]'
+  "Course": "Lunch or Dinner",
+  "Diet": "gluten free",
+  "PrepTime": "30 minutes",
+  "CookTime": "10 minutes",
+  "ServingSize": "10 people",
+  "item1": ["Filling", "2 cups of shredded cabbage", "1 medium carrot, grated", "1 tablespoon dried Mexican oregano", "3/4 cup hot water", "3/4 cup apple cider vinegar", "3/4 teaspoon kosher salt", "3/4 teaspoon granulated sugar"],
+  "pupusaDough": ["2.25 cup Masa (e.g. Maseca brand)", "1.5 teaspons salt", "2 cups water"],
+  "filling": ["1.5 cups quesillo (can use mozzarella)", "3/4 cup Loroco flower (or butternut squash)"]
+}]
