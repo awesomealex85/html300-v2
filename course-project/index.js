@@ -8,6 +8,7 @@ recipe.forEach(function(el) {
 })
 recipe.forEach(function(el) {
   console.log(el.item1)
+  console.log(el.item1.length)
 })
 
 //get section of html to put the card into
@@ -30,15 +31,20 @@ recipe.forEach(function(el) {
 			<p><strong>Cook Time:</strong> ${el.CookTime}</p>
 			<p><strong>Serving Size:</strong> ${el.ServingSize}</p>
 		</div>
-    <div class="recipe__description">
+    <div class="recipe__ingridients">
       <p><strong>Ingridients:</strong> ${el.item1[0]}</p>
   </article>
   `
 
-  // for (let i = 1; i < item1.length; i++) {
-  // const article = document.createElement('p');
-  // p.innerHTML = item1[i];
-  // }
+
   //<p>${el.item1.[0]}</p>
   container.append(list)
+})
+recipe.forEach(function(el) {
+for (let i = 1; i < el.item1.length; i++) {
+const p = document.createElement('p');
+const div = document.querySelector('div.recipe__ingridients');
+div.appendChild(p);
+p.innerHTML = item1[i];
+}
 })
