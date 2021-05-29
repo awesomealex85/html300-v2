@@ -4,3 +4,39 @@
 @import 'settings.responsive';
 @import 'components.content';
 
+.grid-container {
+  display: grid;
+  margin: auto;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: minmax(15em, auto);
+  justify-items: auto;
+  align-items: stretch;
+
+
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "content sidebar"
+  "footer footer"
+}
+
+.grid-item-1 {
+  grid-area: header;
+}
+
+.grid-item-2 {
+  grid-area: nav;
+}
+
+.grid-item-3 {
+  grid-area: content;
+}
+
+.grid-item-4 {
+  grid-area: sidebar;
+}
+
+.grid-item-5 {
+  grid-area: footer;
+}
