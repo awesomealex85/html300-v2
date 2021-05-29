@@ -16,9 +16,8 @@ html {
     }
 }
 
-
+// display: flex;
 article.preview {
-  // display: flex;
   border: 0.5rem solid $darkgray;
   padding: 1rem;
   width: 90%;
@@ -26,6 +25,7 @@ article.preview {
   border-radius: 5%;
     max-width: 20rem;
 }
+// image cropping
 img.animated {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -35,7 +35,7 @@ img.animated {
   width: 12em;
   border-radius: 50%;
 }
-// header
+// header format
 header {
   background-image: url("../img/el-salvador-playa-02.jpeg");
   background-repeat: no-repeat;
@@ -55,7 +55,7 @@ header {
     color: $salvablue;
   }
 }
-
+// Navigation format
 .nav {
   background: $salvablue;
   display: flex;
@@ -85,7 +85,7 @@ header {
   color: $white;
   }
 }
-
+//footer formatt
 footer {
   background: $salvablue;
   box-sizing: border-box;
@@ -99,7 +99,7 @@ footer {
     width: 24rem;
   }
 }
-
+// flex display
 .flex {
   display: flex;
   justify-content: space-between;

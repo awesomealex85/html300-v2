@@ -4,6 +4,7 @@
 @import 'settings.responsive';
 @import 'components.content';
 
+// grid layout
 .grid-container {
   display: grid;
   margin: auto;
@@ -12,7 +13,6 @@
   grid-template-rows: minmax(15em, auto);
   justify-items: auto;
   align-items: stretch;
-
 
   grid-template-areas:
   "header header"
