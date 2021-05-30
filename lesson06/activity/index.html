@@ -2,22 +2,98 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./index.js" charset="utf-8"></script>
-    <title>activity-06</title>
+    <title>Assignment-06</title>
   </head>
-  <body>
-    <form class="form-group">
-      <button id="clickme" type="submit" class="btn btn-primary btn-block" name="button"
-      data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">click me</button>
-      <span id="disabled" type="submit" class="btn btn-primary btn-block" name="button"
-      class="d-inline-block" tabindex="0" data-toggle="tooltip" title="click the click me button first">
-        <button id="submit" class="btn btn-secondary" style="pointer-events: none;" type="button"
-        disabled>Disabled button</button>
-      </span>
-    </form>
-  </body>
+  <body class="grid-container">
+      <header class="header-wrap grid-item grid-item-1">
+        <section class="flex header">
+          <img class="logo" src="img/el_comal_logo.png" alt="company logo"/>
+          <h2 class="title">Sabores Guanacos: Salvadorean Cuisine Guide</h2>
+        </section>
+      </header>
+      <article class="grid-item grid-item-2">
+        <div class="nav-wrap">
+          <!-- flex applied to nav items -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Recipes</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Pantry</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<!-- Main landing section -->
+      </article>
+        <main class="main grid-item grid-item-3">
+          <article class="flex">
+            <img src="img/pupusas_en_plancha.jpeg" alt="company logo"/>
+            <h1>Welcome!</h1>
+            <p>Here you'll find a guide to salvadorean cuisine for those that are not familiar. You'll be able to learn more about Salvadorean food and recipes. El Salvador is located in a tropical region with a variety of tropical flavors and ingridients.
+            </p>
+          </article>
+        </main>
+<!-- side bard for popular recipes -->
+        <section class="sidebar grid-item grid-item-4">
+          <div class="preview flex">
+            <h1>Popular Recipes:</h1>
+            <article class="preview">
+              <img src="img/pupusas_y_curtido.jpeg" alt="plated pupusas with curtido" class="recipe__img animated bounce">
+        			<h2>Pupusa with curtido</h2>
+            </article>
+            <article class="preview">
+              <img src="img/Tamales_de_pollo.jpeg" alt="plated pupusas with curtido" class="recipe__img animated bounce">
+        			<h2>Tamales de Pollo </h2>
+            </article>
+          </div>
+        </section>
+<!-- footer section -->
+        <footer class="grid-item grid-item-5">
+          <div class="flex__footer">
+            <img class="logo " src="img/el_comal_logo.png" alt="company logo"/>
+            <p>Your Guide to Salvadorean Cuisine
+            </p>
+            <div class="nav-wrap">
+              <nav class="nav footer">
+                <ul class="nav__list flex">
+                  <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Recipes</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Pantry</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">blog</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <h3>© 2021 Sabores Guanacos, LLC  |  Seattle, WA
+            </h3>
+          </div>
+        </footer>
+
+    </body>
 </html>
