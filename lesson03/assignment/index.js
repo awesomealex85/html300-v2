@@ -5,7 +5,8 @@ const card = JSON.parse(cardJSON)
 //get section of html to put the card into
 const container = document.querySelector('.template-hook')
 //function for creating card from JSON data
-card.forEach(function(el){
+
+card.forEach(function(el) {
   let list = document.createElement('ul')
   list.innerHTML = `
   <article class="card">
@@ -24,7 +25,5 @@ card.forEach(function(el){
 		</div>
 	</article>
   `
-
-//
   container.append(list)
 })

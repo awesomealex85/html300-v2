@@ -1,0 +1,56 @@
+// Import partials here
+@import 'base.normalize';
+@import 'settings.variables';
+@import 'settings.responsive';
+@import 'components.content';
+
+// main card declared
+.card {
+  display: flex;
+  border: 2rem solid $darkgray;
+  padding: 1rem;
+  width: 50%;
+  margin: 2em;
+  // flows card down for mobile
+  @media screen and (max-width: 768px) {
+    border-width: 1rem;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0em;
+    align-items: center;
+  }
+  // croppes profile picture to circle
+  &__img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit:cover;
+    width: 12em;
+    border-radius: 50%;
+  }
+  // centers text profile picture
+  &__center {
+    margin: auto;
+    text-align: center;
+    padding-right: 2em;
+  }
+    // centers text with logo
+  &__description {
+    background-color: $gray;
+    width: 50rem;
+    padding-left: 2em;
+    & P:last-child {
+      display: flex;
+      align-items:center;
+    }
+    & img {
+      padding: 1em 1em 1em 0em;
+    }
+    // flows card down for mobile
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      padding-left: 1em;
+    }
+  }
+}
