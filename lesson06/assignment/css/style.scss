@@ -4,148 +4,43 @@
 @import 'settings.responsive';
 @import 'components.content';
 
-// header
-header {
-  background-image: url("../img/el-salvador-playa-02.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-size: cover;
-  box-sizing: border-box;
-  padding-left: 5em;
-  padding-top: 5rem;
-  padding-bottom: 8rem;
-  padding-right: 5rem;
-  & img {
-    width: 20em;
-  }
-  & h2{
-    color: $salvablue;
-  }
-}
-// logo
-.logo{
-  width: 24rem;
+// grid layout
+.grid-container {
+  display: grid;
+  margin: auto;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: minmax(auto, auto);
+  justify-items: auto;
+  align-items: stretch;
+
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "content sidebar"
+  "footer footer"
 }
 
-
-footer {
-  background: $salvablue;
-  box-sizing: border-box;
-  text-align: center;
-  font-weight: bold;
-  padding-left: 3em;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  & a {
-    color: white;
-  }
+.grid-item-1 {
+  grid-area: header;
 }
 
-// navigation bar
-nav {
-  display: flex;
-  justify-content: center;
-  &.head{
-    background-color: #D3D3D3; /* dark gray */
-    box-sizing: border-box;
-    padding-left: 7rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  & li {
-    display: inline;
-  }
-  & ul {
-    padding-left: 0px;
-  }
-}
-// main card declared
-.recipe {
-  display: flex;
-  border: 2rem solid $darkgray;
-  padding: 1rem;
-  width: 50%;
-  margin: 2em;
-  // flows card down for mobile
-  @media screen and (max-width: 768px) {
-    border-width: 1rem;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0em;
-    align-items: center;
-  }
-  // croppes profile picture to circle
-  &__img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    object-fit:cover;
-    width: 12em;
-    border-radius: 50%;
-  }
-  // centers text profile picture
-  &__center {
-    margin: auto;
-    text-align: center;
-    padding-right: 2em;
-  }
-    // centers text with logo
-  &__description {
-    background-color: $gray;
-    margin: auto;
-    // width: 80%;
-    // // padding-left: 2em;
-    // margin: auto;
-    text-align: center;
-
-    // & img {
-    //   padding: 1em 1em 1em 0em;
-    // }
-    // flows card down for mobile
-    @media screen and (max-width: 768px) {
-      width: 90%;
-      padding-left: 1em;
-      text-align: center;
-    }
-  }
+.grid-item-2 {
+  grid-area: nav;
 }
 
-// bounce animation
-$leftBounce: -30px;
-$rightBounce: 30px;
-
-@mixin border-default {
-  border: 10px solid #ccc;
+.grid-item-3 {
+  grid-area: content;
 }
 
-.animated:hover {
-  -webkit-animation-duration: 6s infinite;
-  animation-duration: 6s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  @include border-default;
+.grid-item-4 {
+  grid-area: sidebar;
 }
 
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
-  20% {-webkit-transform: translateY($leftBounce);}
-  40% {-webkit-transform: translateY($rightBounce);}
-  60% {-webkit-transform: translateX($leftBounce);}
-  80% {-webkit-transform: translateX($rightBounce);}
+.grid-item-5 {
+  grid-area: footer;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  20% {transform: translateY($leftBounce);}
-  40% {transform: translateY($rightBounce);}
-  60% {transform: translateX($leftBounce);}
-  80% {transform: translateX($rightBounce);}
-}
-
-.bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
+.grid-recipes {
+  grid-column: 1 / 3;
 }

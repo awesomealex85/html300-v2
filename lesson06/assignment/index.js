@@ -11,6 +11,11 @@ recipe.forEach(function(el) {
   console.log(el.item1.length)
 })
 
+// tool tips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 //get section of html to put the card into
 const container = document.querySelector('.template-hook')
 //function for creating card from JSON data

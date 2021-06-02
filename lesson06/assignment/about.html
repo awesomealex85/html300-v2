@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>About</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>About</title>
 </head>
-<body>
-  <header class="container">
-    <section>
-      <img class="logo" src="img/el_comal_logo.png" alt="company logo"/>
-      <h2 class="title">Sabores Guanacos: About</h2>
-    </section>
-  </header>
+<body class="grid-container">
+    <header class="header-wrap grid-item grid-item-1">
+      <section class="flex header">
+        <img class="logo" src="img/el_comal_logo.png" alt="company logo"/>
+        <h2 class="title">Sabores Guanacos: About</h2>
+      </section>
+    </header>
 
   <!-- Naviation Bar -->
-  <article>
-    <nav class="head">
-      <ul>
-        <li><a href="index.html">Home</a> /
-        </li>
-        <li><a href="recipes.html">Recipes</a> /
-        </li>
-        <li><a href="about.html">About</a> /
-        </li>
-        <li><a href="pantry.html">Pantry</a>
-        </li>
-      </ul>
-    </nav>
+    <article class="grid-item grid-item-2">
+    <nav class="navbar navbar-expand-sm navbar-dark nav-justified navbar-custom">
+      <a class="nav-item nav-link" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="recipes.html">Recipes</a>
+      <a class="nav-item nav-link" href="about.html">about</a>
+      <a class="nav-item nav-link" href="pantry.html">pantry</a>
   </article>
 
-
-  <main class="main">
+  <main class="main container grid-recipes">
     <!-- introduction -->
-    <div>
-      <img src="img/pupusas_en_plancha.jpeg" alt="company logo"/>
-      <article>
-        <h1>Welcome!</h1>
-        <p>Here you'll find a guide to salvadorean cuisine for those that are not familiar. You'll be able to learn more about Salvadorean food and recipes. El Salvador is located in a tropical region with a variety of tropical flavors and ingridients.
-        </p>
-      </article>
+    <img src="img/el-salvador-playa-01.jpeg" alt="company logo"/>
+    <article>
+      <h2>About!</h2>
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Cuisine
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            El Salvadorean Cusine is heavily influenced from Aztec and Mayan hertiage as well as spanish and other european cuisines.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Staples
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            The national dish of El Salvador is the Pupusas made with corn meal is a thick tortilla stuff with fillings
+            such as pork beans and cheese, these tasty treats can be found in food carts at every corner around towns.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Drinks
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            El Salvador is located in a tropical climate and lot of tropical fruits grow there such as papaya,
+             and tamaraind which you'll often find as juices and many restaurants.
+          </div>
+        </div>
+      </div>
     </div>
 
   </main>
 
-  <footer>
-    <img class="logo" src="img/el_comal_logo.png" alt="company logo"/>
-    <p>Your Guice to Salvadorean Cuisine
-    </p>
-    <nav class="footer">
-      <ul class="footer">
-        <li><a href="index.html">Home</a> /
-        </li>
-        <li><a href="recipes.html">Recipes</a> /
-        </li>
-        <li><a href="about.html">About</a> /
-        </li>
-        <li><a href="pantry.html">Pantry</a>
-        </li>
-      </ul>
-    </nav>
-    <h3>© 2021 Sabores Guanacos, LLC  |  Seattle, WA
-    </h3>
+  <footer class="grid-item grid-item-5">
+    <div class="flex__footer">
+      <img class="logo" src="img/el_comal_logo.png" alt="company logo"/>
+      <p>Your Guice to Salvadorean Cuisine
+      </p>
+      <div class="nav-wrap">
+        <nav class="nav footer">
+          <ul class="nav__list flex">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Recipes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pantry</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h3>© 2021 Sabores Guanacos, LLC  |  Seattle, WA
+        </h3>
+      </div>
+    </div>
   </footer>
 
   <script src="index.js"></script>
