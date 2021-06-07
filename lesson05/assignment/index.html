@@ -7,9 +7,94 @@
         <link rel="stylesheet" href="css/style.css" />
         <title>Assignment 05 - CSS Grid</title>
     </head>
-    <body>
-        <main class="main">
-          
+    <!-- grid formatt applied to entire page -->
+    <body class="grid-container">
+      <header class="header-wrap grid-item grid-item-1">
+        <section class="flex header">
+          <img class="logo" src="img/el_comal_logo.png" alt="company logo"/>
+          <h2 class="title">Sabores Guanacos: Salvadorean Cuisine Guide</h2>
+        </section>
+      </header>
+      <article class="grid-item grid-item-2">
+        <div class="nav-wrap">
+          <!-- flex applied to nav items -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Recipes</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Pantry</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<!-- Main landing section -->
+      </article>
+        <main class="main grid-item grid-item-3">
+          <article class="flex">
+            <img src="img/pupusas_en_plancha.jpeg" alt="company logo"/>
+            <h1>Welcome!</h1>
+            <p>Here you'll find a guide to salvadorean cuisine for those that are not familiar. You'll be able to learn more about Salvadorean food and recipes. El Salvador is located in a tropical region with a variety of tropical flavors and ingridients.
+            </p>
+          </article>
         </main>
+<!-- side bard for popular recipes -->
+        <section class="sidebar grid-item grid-item-4">
+          <div class="preview flex">
+            <h1>Popular Recipes:</h1>
+            <article class="preview">
+              <img src="img/pupusas_y_curtido.jpeg" alt="plated pupusas with curtido" class="recipe__img animated bounce">
+        			<h2>Pupusa with curtido</h2>
+            </article>
+            <article class="preview">
+              <img src="img/Tamales_de_pollo.jpeg" alt="plated pupusas with curtido" class="recipe__img animated bounce">
+        			<h2>Tamales de Pollo </h2>
+            </article>
+          </div>
+        </section>
+<!-- footer section -->
+        <footer class="grid-item grid-item-5">
+          <div class="flex__footer">
+            <img class="logo " src="img/el_comal_logo.png" alt="company logo"/>
+            <p>Your Guide to Salvadorean Cuisine
+            </p>
+            <div class="nav-wrap">
+              <nav class="nav footer">
+                <ul class="nav__list flex">
+                  <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Recipes</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Pantry</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">blog</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <h3>© 2021 Sabores Guanacos, LLC  |  Seattle, WA
+            </h3>
+          </div>
+
+
+        </footer>
+
     </body>
 </html>
