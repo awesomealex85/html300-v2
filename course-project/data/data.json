@@ -5,7 +5,7 @@
   "PrepTime": "30 minutes",
   "CookTime": "10 minutes",
   "ServingSize": "10 people",
-  "item1": ["Filling", "2 cups of shredded cabbage", "1 medium carrot, grated", "1 tablespoon dried Mexican oregano", "3/4 cup hot water", "3/4 cup apple cider vinegar", "3/4 teaspoon kosher salt", "3/4 teaspoon granulated sugar"],
-  "pupusaDough": ["2.25 cup Masa (e.g. Maseca brand)", "1.5 teaspons salt", "2 cups water"],
-  "filling": ["1.5 cups quesillo (can use mozzarella)", "3/4 cup Loroco flower (or butternut squash)"]
+  "ingridient1": ["Filling", "2 cups of shredded cabbage", "1 medium carrot, grated", "1 tablespoon dried Mexican oregano", "3/4 cup hot water", "3/4 cup apple cider vinegar", "3/4 teaspoon kosher salt", "3/4 teaspoon granulated sugar"],
+  "ingridient2": ["pupusaDough", "2.25 cup Masa (e.g. Maseca brand)", "1.5 teaspons salt", "2 cups water"],
+  "ingridient3": ["filling", "1.5 cups quesillo (can use mozzarella)", "3/4 cup Loroco flower (or butternut squash)"]
 }]
