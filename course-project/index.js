@@ -15,6 +15,13 @@ recipe.forEach(function(el) {
 const container = document.querySelector('.template-hook')
 //function for creating card from JSON data
 recipe.forEach(function(el) {
+  console.log(el)
+  let ingridients = ""
+
+  el.item1.forEach(function(item1){
+    ingridients += `<p>${item1}</p>`
+  })
+  console.log(ingridients)
   let list = document.createElement('ul')
   list.innerHTML = `
   <article class="recipe">
@@ -32,19 +39,20 @@ recipe.forEach(function(el) {
 			<p><strong>Serving Size:</strong> ${el.ServingSize}</p>
 		</div>
     <div class="recipe__ingridients">
-      <p><strong>Ingridients:</strong> ${el.item1[0]}</p>
+      <p><strong>Ingridients: </p>
+      ${ingridients}
   </article>
   `
-
-
-  //<p>${el.item1.[0]}</p>
-  container.append(list)
-})
-recipe.forEach(function(el) {
-for (let i = 1; i < el.item1.length; i++) {
-const p = document.createElement('p');
-const div = document.querySelector('div.recipe__ingridients');
-div.appendChild(p);
-p.innerHTML = item1[i];
-}
-})
+// 
+//
+//   //<p>${el.item1.[0]}</p>
+//   container.append(list)
+// })
+// recipes.forEach(function(el) {
+// for (let i = 1; i < el.item1.length; i++) {
+// const p = document.createElement('p');
+// const div = document.querySelector('div.recipe__ingridients');
+// div.appendChild(p);
+// p.innerHTML = item1[i];
+// }
+// })
